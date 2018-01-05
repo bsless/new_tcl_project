@@ -15,7 +15,7 @@ touch test/${name}.test
 
 # Write package template
 cat <<EOF > src/${name}.tcl
-# -*- mode: Tcl -*_
+# -*- mode: Tcl -*-
 # ${name}.tcl --
 #
 # Description:
@@ -26,7 +26,7 @@ cat <<EOF > src/${name}.tcl
 #
 # Revision: 0
 #
-# $Id$
+# \$Id\$
 
 package provide ${name} 0.1
 
