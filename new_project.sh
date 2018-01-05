@@ -36,7 +36,7 @@ EOF
 
 # Write Test bootstrap
 cat <<EOF > test/all.tcl
-# -*- mode: Tcl -*_
+# -*- mode: Tcl -*-
 # all.tcl --
 #
 # Description:
@@ -57,7 +57,7 @@ EOF
 
 # Write test file template
 cat <<EOF > test/${name}.test
-# -*- mode: Tcl -*_
+# -*- mode: Tcl -*-
 # ${name}.test --
 #
 # Description:
