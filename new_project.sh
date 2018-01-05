@@ -131,7 +131,7 @@ a package index was created in it after installsion.
 
 EOF
 
-cat <<EOF
+cat <<EOF >> .gitignore
 # swap files
 *.swp
 .#*
