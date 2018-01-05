@@ -32,6 +32,8 @@ package provide ${name} 0.1
 
 namespace eval ${name} {
 }
+
+#vim: set filetype=tcl expandtab sw=4
 EOF
 
 # Write Test bootstrap
@@ -47,12 +49,14 @@ cat <<EOF > test/all.tcl
 #
 # Revision: 0
 #
-# $Id$
+# \$Id\$
 
 package require tcltest
 namespace import -force ::tcltest::*
 
 ::tcltest::runAllTests
+
+#vim: set filetype=tcl expandtab sw=4
 EOF
 
 # Write test file template
@@ -68,7 +72,7 @@ cat <<EOF > test/${name}.test
 #
 # Revision: 0
 #
-# $Id$
+# \$Id\$
 
 source ../src/${name}.tcl
 
@@ -81,6 +85,8 @@ test ${name}_t0 {
 } -result {}
 
 ::tcltest::cleanupTests 1
+
+#vim: set filetype=tcl expandtab sw=4
 EOF
 
 # Write tests Makefile
